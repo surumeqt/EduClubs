@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduClubs Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen bg-[#FFF6BF]">
+
+    <aside id="sidebar" class="sidebar bg-[#7FE9DE] text-[#2D3748] p-6 flex flex-col shadow-lg md:relative md:transform-none">
+        <div class="mb-8 flex items-center justify-between md:justify-center">
+            <h1 class="text-3xl font-bold educlubs-text-shadow">EduClubs</h1>
+            <button id="closeSidebarBtn" class="md:hidden text-3xl font-bold focus:outline-none">&times;</button>
+        </div>
+        <nav class="flex-grow">
+            <ul class="space-y-4">
+                <li>
+                    <a href="#" class="block px-4 py-2 rounded-lg text-lg font-medium hover:bg-[#A5F1E9] transition duration-200">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-2 rounded-lg text-lg font-medium hover:bg-[#A5F1E9] transition duration-200">My Projects</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-2 rounded-lg text-lg font-medium hover:bg-[#A5F1E9] transition duration-200">Browse Commissions</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-2 rounded-lg text-lg font-medium hover:bg-[#A5F1E9] transition duration-200">Messages</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-2 rounded-lg text-lg font-medium hover:bg-[#A5F1E9] transition duration-200">Profile & Settings</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mt-8">
+            <button class="w-full bg-[#FFEBAD] text-[#2D3748] px-6 py-2 rounded-full font-semibold shadow-md hover:bg-[#FFF6BF] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A5F1E9] focus:ring-opacity-75">
+                Logout
+            </button>
+        </div>
+    </aside>
+
+    <div id="sidebarOverlay" class="sidebar-overlay md:hidden"></div>
+
+    <div class="flex-1 flex flex-col p-6 md:p-8">
+        <header class="bg-white p-4 rounded-xl shadow-md mb-8 flex items-center justify-between md:hidden">
+            <button id="openSidebarBtn" class="text-[#2D3748] focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <h2 class="text-2xl font-bold text-[#2D3748]">Dashboard</h2>
+            <div class="flex items-center space-x-2">
+                <span class="text-[#4A5568] font-medium">Hi, User!</span>
+                <img src="https://placehold.co/40x40/FFEBAD/2D3748?text=U" alt="User Avatar" class="w-10 h-10 rounded-full shadow-sm">
+            </div>
+        </header>
+
+        <h2 class="hidden md:block text-4xl font-bold text-[#2D3748] mb-8">Welcome to Your EduClubs Dashboard!</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-[#A5F1E9]">
+                <h3 class="text-xl font-semibold text-[#2D3748] mb-4">Total Projects</h3>
+                <p class="text-5xl font-bold text-[#7FE9DE]">12</p>
+                <p class="text-[#4A5568] mt-2">Active: 3 | Completed: 9</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-[#FFEBAD]">
+                <h3 class="text-xl font-semibold text-[#2D3748] mb-4">Unread Messages</h3>
+                <p class="text-5xl font-bold text-[#FFEBAD]">4</p>
+                <p class="text-[#4A5568] mt-2">From: Project Alpha, New Client</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-[#A5F1E9]">
+                <h3 class="text-xl font-semibold text-[#2D3748] mb-4">This Month's Activity</h3>
+                <p class="text-5xl font-bold text-[#7FE9DE]">$750</p>
+                <p class="text-[#4A5568] mt-2">As creator/customer</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg flex-grow border border-[#FFEBAD]">
+            <h3 class="text-2xl font-bold text-[#2D3748] mb-6">Recent Activity</h3>
+            <ul class="space-y-4">
+                <li class="flex justify-between items-center p-4 rounded-md bg-[#FFF6BF] border border-[#FFEBAD]">
+                    <span class="text-[#4A5568]">Project "Website Redesign" proposal submitted.</span>
+                    <span class="text-sm text-[#718096]">2 hours ago</span>
+                </li>
+                <li class="flex justify-between items-center p-4 rounded-md bg-[#FFF6BF] border border-[#FFEBAD]">
+                    <span class="text-[#4A5568]">New message from client for "Logo Design".</span>
+                    <span class="text-sm text-[#718096]">Yesterday</span>
+                </li>
+                <li class="flex justify-between items-center p-4 rounded-md bg-[#FFF6BF] border border-[#FFEBAD]">
+                    <span class="text-[#4A5568]">Commission "Mobile App UI" completed.</span>
+                    <span class="text-sm text-[#718096]">3 days ago</span>
+                </li>
+            </ul>
+            <button class="mt-6 bg-[#A5F1E9] text-[#2D3748] px-6 py-2 rounded-full font-semibold shadow-md hover:bg-[#7FE9DE] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFEBAD] focus:ring-opacity-75">
+                View All Activity
+            </button>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

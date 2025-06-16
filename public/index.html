@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduClubs - Unlock Your Potential. Get Commissioned.</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FFF6BF] min-h-screen flex flex-col">
+
+    <nav class="bg-[#7FE9DE] p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
+            <div class="text-[#2D3748] text-3xl font-bold educlubs-text-shadow">
+                EduClubs
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#blogs" class="text-[#2D3748] hover:text-white transition duration-300 font-medium rounded-md px-3 py-2">Blogs</a>
+                <a href="#issues" class="text-[#2D3748] hover:text-white transition duration-300 font-medium rounded-md px-3 py-2">Issues</a>
+                <a href="#team" class="text-[#2D3748] hover:text-white transition duration-300 font-medium rounded-md px-3 py-2">Team</a>
+                <button id="loginSignupBtn" class="bg-[#FFEBAD] text-[#2D3748] px-6 py-2 rounded-full font-semibold shadow-md hover:bg-[#FFF6BF] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A5F1E9] focus:ring-opacity-75">
+                    Login or Sign-Up
+                </button>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobileMenuBtn" class="text-[#2D3748] focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden fixed inset-0 bg-black bg-opacity-75 z-40">
+            <div class="absolute right-0 top-0 h-full w-3/4 bg-[#7FE9DE] p-6 shadow-xl flex flex-col space-y-4">
+                <button id="closeMobileMenuBtn" class="self-end text-[#2D3748] text-3xl font-bold">&times;</button>
+                <a href="#blogs" class="text-[#2D3748] text-lg font-medium hover:text-white transition duration-300 py-2 border-b border-[#A5F1E9]">Blogs</a>
+                <a href="#issues" class="text-[#2D3748] text-lg font-medium hover:text-white transition duration-300 py-2 border-b border-[#A5F1E9]">Issues</a>
+                <a href="#team" class="text-[#2D3748] text-lg font-medium hover:text-white transition duration-300 py-2 border-b border-[#A5F1E9]">Team</a>
+                <button id="mobileLoginSignupBtn" class="bg-[#FFEBAD] text-[#2D3748] px-6 py-3 rounded-full font-semibold shadow-md hover:bg-[#FFF6BF] transition duration-300 mt-4 focus:outline-none focus:ring-2 focus:ring-[#A5F1E9] focus:ring-opacity-75">
+                    Login or Sign-Up
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center py-16 px-4 md:px-8 text-center bg-[#FFF6BF]">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-[#2D3748] leading-tight mb-6">
+                Unlock Your Potential. <span class="text-[#7FE9DE]">Get Commissioned.</span> Find Your Talent.
+            </h1>
+            <p class="text-xl md:text-2xl text-[#4A5568] mb-10 leading-relaxed">
+                EduClubs is the innovative platform connecting clients seeking skilled individuals with talented creators ready to bring ideas to life.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <button class="bg-[#A5F1E9] text-[#2D3748] px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-[#7FE9DE] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFEBAD] focus:ring-opacity-75">
+                    Become a Creator
+                </button>
+                <button class="bg-[#FFEBAD] text-[#2D3748] px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-[#FFF6BF] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A5F1E9] focus:ring-opacity-75">
+                    Find a Creator
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <section id="how-it-works" class="bg-[#A5F1E9] py-16 px-4 md:px-8 text-center">
+        <h2 class="text-4xl font-bold text-[#2D3748] mb-12">How EduClubs Works</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center animate-on-scroll card-delay-1">
+                <div class="bg-[#FFEBAD] text-[#2D3748] text-4xl font-extrabold w-16 h-16 flex items-center justify-center rounded-full mb-6 shadow-md">1</div>
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-4">Post Your Project</h3>
+                <p class="text-[#4A5568] text-lg">Clients describe their needs, from graphic design to custom code, and set their budget.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center animate-on-scroll card-delay-2">
+                <div class="bg-[#FFEBAD] text-[#2D3748] text-4xl font-extrabold w-16 h-16 flex items-center justify-center rounded-full mb-6 shadow-md">2</div>
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-4">Connect with Talent</h3>
+                <p class="text-[#4A5568] text-lg">Creators browse projects, submit proposals, and connect directly with potential clients.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center animate-on-scroll card-delay-3">
+                <div class="bg-[#FFEBAD] text-[#2D3748] text-4xl font-extrabold w-16 h-16 flex items-center justify-center rounded-full mb-6 shadow-md">3</div>
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-4">Get it Done!</h3>
+                <p class="text-[#4A5568] text-lg">Clients receive high-quality work, and creators get compensated for their skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FFEBAD] py-16 px-4 md:px-8 text-center">
+        <h2 class="text-4xl font-bold text-[#2D3748] mb-12">What Our Users Say</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col animate-on-scroll card-delay-1">
+                <p class="text-[#4A5568] text-lg italic mb-6">"EduClubs helped me find the perfect designer for my project. The process was smooth and the quality was exceptional!"</p>
+                <div class="flex items-center justify-center">
+                    <img src="https://placehold.co/60x60/A5F1E9/2D3748?text=U1" alt="User 1" class="w-12 h-12 rounded-full mr-4 shadow-md">
+                    <p class="text-[#2D3748] font-semibold">- Jane Doe, Entrepreneur</p>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col animate-on-scroll card-delay-2">
+                <p class="text-[#4A5568] text-lg italic mb-6">"As a freelance artist, EduClubs has been a game-changer. I've connected with so many interesting clients and built my portfolio."</p>
+                <div class="flex items-center justify-center">
+                    <img src="https://placehold.co/60x60/7FE9DE/2D3748?text=U2" alt="User 2" class="w-12 h-12 rounded-full mr-4 shadow-md">
+                    <p class="text-[#2D3748] font-semibold">- John Smith, Illustrator</p>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col animate-on-scroll card-delay-3">
+                <p class="text-[#4A5568] text-lg italic mb-6">"Finally, a platform that understands both client needs and creator value. Highly recommend EduClubs!"</p>
+                <div class="flex items-center justify-center">
+                    <img src="https://placehold.co/60x60/FFF6BF/2D3748?text=U3" alt="User 3" class="w-12 h-12 rounded-full mr-4 shadow-md">
+                    <p class="text-[#2D3748] font-semibold">- Emily White, Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="bg-[#A5F1E9] py-16 px-4 md:px-8 text-center">
+        <h2 class="text-4xl font-bold text-[#2D3748] mb-12">Latest from Our Blog</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-left animate-on-scroll card-delay-1">
+                <img src="https://placehold.co/400x250/7FE9DE/2D3748?text=Blog+Image+1" alt="Blog Post 1" class="w-full h-auto rounded-md mb-6 shadow-md">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-4">The Art of Effective Commissioning</h3>
+                <p class="text-[#4A5568] text-lg mb-4">Learn how to clearly define your project needs to get the best results from your creators.</p>
+                <a href="#" class="text-[#7FE9DE] font-semibold hover:text-[#2D3748] transition duration-300">Read More &rarr;</a>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-left animate-on-scroll card-delay-2">
+                <img src="https://placehold.co/400x250/FFF6BF/2D3748?text=Blog+Image+2" alt="Blog Post 2" class="w-full h-auto rounded-md mb-6 shadow-md">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-4">Building Your Creator Portfolio</h3>
+                <p class="text-[#4A5568] text-lg mb-4">Tips and tricks for showcasing your talent and attracting more commissions on EduClubs.</p>
+                <a href="#" class="text-[#7FE9DE] font-semibold hover:text-[#2D3748] transition duration-300">Read More &rarr;</a>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-left animate-on-scroll card-delay-3">
+                <img src="https://placehold.co/400x250/FFEBAD/2D3748?text=Blog+Image+3" alt="Blog Post 3" class="w-full h-auto rounded-md mb-6 shadow-md">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-4">Community Spotlight: Our Top Creators</h3>
+                <p class="text-[#4A5568] text-lg mb-4">Highlighting some of the incredible talent making waves on the EduClubs platform.</p>
+                <a href="#" class="text-[#7FE9DE] font-semibold hover:text-[#2D3748] transition duration-300">Read More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="issues" class="bg-[#FFEBAD] py-16 px-4 md:px-8 text-center">
+        <h2 class="text-4xl font-bold text-[#2D3748] mb-12">Common Questions & Issues</h2>
+        <div class="container mx-auto max-w-2xl">
+            <div class="bg-white p-6 rounded-xl shadow-lg mb-6 text-left animate-on-scroll card-delay-1">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-2">How do I post a commission?</h3>
+                <p class="text-[#4A5568] text-lg">You can post a new commission by logging into your customer dashboard and navigating to the "Post Project" section. Fill in the details, budget, and attach any relevant files.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg mb-6 text-left animate-on-scroll card-delay-2">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-2">What if I'm unhappy with the work?</h3>
+                <p class="text-[#4A5568] text-lg">EduClubs offers a dispute resolution process. If you're not satisfied, you can initiate a dispute and our team will help mediate a fair solution.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-left animate-on-scroll card-delay-3">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-2">How do I get paid as a creator?</h3>
+                <p class="text-[#4A5568] text-lg">Once a project is completed and approved by the client, funds are released from escrow to your linked payment method. You can manage this in your creator settings.</p>
+            </div>
+            <button class="mt-8 bg-[#A5F1E9] text-[#2D3748] px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-[#7FE9DE] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFEBAD] focus:ring-opacity-75">
+                Visit Our Full FAQ
+            </button>
+        </div>
+    </section>
+
+    <section id="team" class="bg-[#A5F1E9] py-16 px-4 md:px-8 text-center">
+        <h2 class="text-4xl font-bold text-[#2D3748] mb-12">Meet the EduClubs Team</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center animate-on-scroll card-delay-1">
+                <img src="https://placehold.co/150x150/7FE9DE/2D3748?text=TM1" alt="Team Member 1" class="w-36 h-36 rounded-full mb-6 shadow-md">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-2">Alex Johnson</h3>
+                <p class="text-[#718096] text-lg mb-4">Founder & CEO</p>
+                <p class="text-[#4A5568] text-base">Passionate about connecting talent with opportunities and fostering a vibrant creative community.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center animate-on-scroll card-delay-2">
+                <img src="https://placehold.co/150x150/FFEBAD/2D3748?text=TM2" alt="Team Member 2" class="w-36 h-36 rounded-full mb-6 shadow-md">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-2">Maria Garcia</h3>
+                <p class="text-[#718096] text-lg mb-4">Head of Community</p>
+                <p class="text-[#4A5568] text-base">Dedicated to supporting our users and ensuring a positive and productive platform experience.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center animate-on-scroll card-delay-3">
+                <img src="https://placehold.co/150x150/FFF6BF/2D3748?text=TM3" alt="Team Member 3" class="w-36 h-36 rounded-full mb-6 shadow-md">
+                <h3 class="text-2xl font-semibold text-[#2D3748] mb-2">David Lee</h3>
+                <p class="text-[#718096] text-lg mb-4">Lead Developer</p>
+                <p class="text-[#4A5568] text-base">The wizard behind the curtain, constantly improving the platform's functionality and performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FFF6BF] py-20 px-4 md:px-8 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-[#2D3748] mb-6 leading-tight">
+                Your Next Big Project or Opportunity Awaits!
+            </h2>
+            <p class="text-xl md:text-2xl text-[#4A5568] mb-10 leading-relaxed">
+                Whether you're looking to commission a unique piece of work or offer your valuable skills, EduClubs is the place to start.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <button class="bg-[#A5F1E9] text-[#2D3748] px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-[#7FE9DE] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFEBAD] focus:ring-opacity-75">
+                    I Need Talent
+                </button>
+                <button class="bg-[#FFEBAD] text-[#2D3748] px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-[#FFF6BF] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A5F1E9] focus:ring-opacity-75">
+                    I Am Talent
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#7FE9DE] py-8 px-4 md:px-8 text-center text-[#2D3748] text-sm">
+        <div class="container mx-auto">
+            &copy; 2025 EduClubs. All rights reserved.
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="authModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-button" id="closeModalBtn">&times;</button>
+            <h2 class="text-3xl font-bold text-[#2D3748] mb-6 text-center">Join EduClubs</h2>
+
+            <div class="flex justify-center mb-6">
+                <button id="loginTab" class="px-6 py-3 rounded-l-full font-semibold text-lg transition duration-300 border-2 border-[#7FE9DE] bg-[#A5F1E9] text-[#2D3748] focus:outline-none">
+                    Login
+                </button>
+                <button id="signupTab" class="px-6 py-3 rounded-r-full font-semibold text-lg transition duration-300 border-2 border-[#7FE9DE] text-[#2D3748] focus:outline-none">
+                    Sign Up
+                </button>
+            </div>
+
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label for="loginEmail" class="block text-sm font-medium text-[#4A5568] mb-1">Email</label>
+                    <input type="email" id="loginEmail" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="your@example.com">
+                </div>
+                <div>
+                    <label for="loginPassword" class="block text-sm font-medium text-[#4A5568] mb-1">Password</label>
+                    <input type="password" id="loginPassword" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="••••••••">
+                </div>
+                <button type="submit" class="w-full bg-[#FFEBAD] text-[#2D3748] py-3 rounded-md font-semibold text-lg shadow-md hover:bg-[#FFF6BF] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A5F1E9] focus:ring-opacity-75">
+                    Login
+                </button>
+            </form>
+
+            <form id="signupForm" class="space-y-4 hidden">
+                <div>
+                    <label for="signupUsername" class="block text-sm font-medium text-[#4A5568] mb-1">Username</label>
+                    <input type="text" id="signupUsername" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="Choose a username">
+                </div>
+                <div>
+                    <label for="signupEmail" class="block text-sm font-medium text-[#4A5568] mb-1">Email</label>
+                    <input type="email" id="signupEmail" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="your@example.com">
+                </div>
+                <div>
+                    <label for="signupPassword" class="block text-sm font-medium text-[#4A5568] mb-1">Password</label>
+                    <input type="password" id="signupPassword" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="••••••••">
+                </div>
+                <div>
+                    <label for="signupConfirmPassword" class="block text-sm font-medium text-[#4A5568] mb-1">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="••••••••">
+                </div>
+                <button type="submit" class="w-full bg-[#A5F1E9] text-[#2D3748] py-3 rounded-md font-semibold text-lg shadow-md hover:bg-[#7FE9DE] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFEBAD] focus:ring-opacity-75">
+                    Sign Up
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
