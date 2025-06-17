@@ -18,7 +18,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(PUBLIC_PATH));
-
 app.use('/', appRoutes);
 
 app.listen(PORT, () => {

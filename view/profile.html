@@ -1,0 +1,85 @@
+<main class="p-0">
+    <h2 class="text-4xl font-bold text-[#2D3748] mb-8 hidden md:block">Profile & Settings</h2>
+    <h2 class="text-2xl font-bold text-[#2D3748] mb-8 md:hidden">Profile & Settings</h2>
+
+    <div class="bg-white p-6 rounded-xl shadow-lg mb-8 border border-[#7FE9DE]">
+        <h3 class="text-2xl font-bold text-[#2D3748] mb-6">Basic Information</h3>
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/120x120/FFEBAD/2D3748?text=USER" alt="User Avatar" class="w-28 h-28 rounded-full shadow-md border-4 border-[#A5F1E9]">
+                <button class="mt-3 w-full bg-[#FFEBAD] text-[#2D3748] px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#FFF6BF] transition duration-300">
+                    Change Photo
+                </button>
+            </div>
+            <div class="flex-grow w-full">
+                <form class="space-y-4">
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-[#4A5568] mb-1">Username</label>
+                        <input type="text" id="username" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" value="JohnDoe" readonly>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-[#4A5568] mb-1">Email</label>
+                        <input type="email" id="email" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" value="john.doe@example.com">
+                    </div>
+                    <div>
+                        <label for="role" class="block text-sm font-medium text-[#4A5568] mb-1">Role</label>
+                        <input type="text" id="role" class="w-full p-3 border border-[#A5F1E9] rounded-md bg-gray-100 cursor-not-allowed" value="User1 (Customer)" readonly>
+                    </div>
+                    <button type="submit" class="bg-[#A5F1E9] text-[#2D3748] px-6 py-3 rounded-full font-semibold shadow-md hover:bg-[#7FE9DE] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFEBAD] focus:ring-opacity-75">
+                        Save Changes
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-lg mb-8 border border-[#FFEBAD]">
+        <h3 class="text-2xl font-bold text-[#2D3748] mb-6">Account Security</h3>
+        <form class="space-y-4">
+            <div>
+                <label for="currentPassword" class="block text-sm font-medium text-[#4A5568] mb-1">Current Password</label>
+                <input type="password" id="currentPassword" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="••••••••">
+            </div>
+            <div>
+                <label for="newPassword" class="block text-sm font-medium text-[#4A5568] mb-1">New Password</label>
+                <input type="password" id="newPassword" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="••••••••">
+            </div>
+            <div>
+                <label for="confirmNewPassword" class="block text-sm font-medium text-[#4A5568] mb-1">Confirm New Password</label>
+                <input type="password" id="confirmNewPassword" class="w-full p-3 border border-[#A5F1E9] rounded-md focus:ring-2 focus:ring-[#7FE9DE] focus:border-transparent transition" placeholder="••••••••">
+            </div>
+            <button type="submit" class="bg-[#FFEBAD] text-[#2D3748] px-6 py-3 rounded-full font-semibold shadow-md hover:bg-[#FFF6BF] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A5F1E9] focus:ring-opacity-75">
+                Update Password
+            </button>
+        </form>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-lg mb-8 border border-[#FFF6BF]">
+        <h3 class="text-2xl font-bold text-[#2D3748] mb-6">Notification Settings</h3>
+        <div class="space-y-3">
+            <div class="flex items-center">
+                <input type="checkbox" id="emailNotifications" class="h-5 w-5 text-[#7FE9DE] rounded border-gray-300 focus:ring-[#A5F1E9]" checked>
+                <label for="emailNotifications" class="ml-3 text-lg font-medium text-[#4A5568]">Email Notifications</label>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="messageNotifications" class="h-5 w-5 text-[#7FE9DE] rounded border-gray-300 focus:ring-[#A5F1E9]" checked>
+                <label for="messageNotifications" class="ml-3 text-lg font-medium text-[#4A5568]">New Message Alerts</label>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="projectUpdates" class="h-5 w-5 text-[#7FE9DE] rounded border-gray-300 focus:ring-[#A5F1E9]">
+                <label for="projectUpdates" class="ml-3 text-lg font-medium text-[#4A5568]">Project Update Reminders</label>
+            </div>
+        </div>
+        <button class="mt-6 bg-[#A5F1E9] text-[#2D3748] px-6 py-3 rounded-full font-semibold shadow-md hover:bg-[#7FE9DE] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFEBAD] focus:ring-opacity-75">
+            Save Notification Preferences
+        </button>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-lg border border-[#A5F1E9]">
+        <h3 class="text-2xl font-bold text-[#2D3748] mb-6">Payment Information</h3>
+        <p class="text-[#4A5568] mb-4">Manage your payment methods and billing details.</p>
+        <button class="bg-[#FFEBAD] text-[#2D3748] px-6 py-3 rounded-full font-semibold shadow-md hover:bg-[#FFF6BF] transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A5F1E9] focus:ring-opacity-75">
+            Add/Manage Payment Method
+        </button>
+    </div>
+</main>

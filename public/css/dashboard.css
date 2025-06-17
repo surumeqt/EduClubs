@@ -52,3 +52,9 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+.dashboard-nav-link.active {
+    background-color: #A5F1E9;
+    color: #2D3748;
+    font-weight: bold;
+}
